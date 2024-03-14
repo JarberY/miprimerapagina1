@@ -1,0 +1,390 @@
+
+
+
+  header{
+    display: flex;
+    background-color: grey;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 0px;
+    font-size: 20px;
+  }
+
+  header a i{
+    color:white;
+    font-size: 2em;
+    padding: 0.5em;
+
+  }
+
+header nav ul{
+    display: flex;
+    gap: 1.1em;
+    margin-right: 40px;
+}
+
+header nav ul li a{
+    color:white;
+}
+
+ol,ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    cursor:pointer;
+    
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+/*.parrafo11{
+  width: 50%;
+}*/
+
+
+.seccion-1{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  padding:8em;
+  font-family: "Roboto", sans-serif;
+}
+
+/*img{
+  width: 300px;
+  height: 300px;
+}*/
+
+.acerca-imagen img{
+  height: 400px;
+  width: 350px;
+}
+
+.acerca-de{
+   font-size: 25px;
+   margin: 25px;
+}
+
+.seccion-2 img{
+  width: 100%;
+  height: 600px;
+}
+
+.contacto{
+  color: aqua;
+  margin: auto;
+  margin-left: 40px;
+  font-size: 30px;
+}
+
+#footer{
+ background-color:gray;
+ padding: 10px;
+ margin: 0px;
+}
+
+.redes{
+  color: white;
+  font-size: 20px;
+}
+
+a i.fa-solid.fa-code.fixed{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 25px;
+  color: red;
+}
+
+
+.trabajo{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imagen-1 img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50px;
+}
+
+.imagen-2 img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50px;
+}
+
+.imagen-3 img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50px;
+}
+
+.titulo-1{
+  padding: 5px;
+  height: 500px;
+  max-width: 500px;
+}
+
+.t1{
+  text-align: center;
+}
+
+.parrafo1{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.parrafo2{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.parrafo3{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.abajo{
+  margin: 40px;
+}
+
+header{
+  width: 100%;
+  position: fixed;
+}
+
+@media(max-width:768px){
+  header{
+    background-color:dodgerblue;
+  }
+  .menu{
+    display: none;
+  }
+}
+
+
+
+@media(max-width:768px){
+  .seccion-1{
+    background-color:yellow;
+    display: block;
+  }
+}
+
+
+#check{
+  display: none;
+}
+
+.checkbtn{
+  display: none;
+  font-size: 25px;
+  color:red;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+@media(max-width:768px){
+  .checkbtn{
+    display: block;
+  }
+  .media ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background:chartreuse;
+    text-align: center;
+    top:60px;
+    left: 100%;
+    transition: all 0.5s;
+  }
+  #check:checked ~ ul{
+    left: 0;
+    display: block;
+  }
+
+  .media nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .media nav ul li a {
+    font-size: 20px;
+  }
+
+  #check:checked ~ .checkbtn{
+    color:coral;
+  }
+  
+
+}
+
+/* ------------- CSS General ------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #5d6063;
+  background-color: #eaedf0;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 16px;
+}
+
+/* ------------- Encabezado Contacto ------------- */
+
+.form-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-header {
+  text-align: center;
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  width: 80%;
+  margin: 10px auto;
+  padding: 50px;
+}
+
+.form-header h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* ------------- Formulario ------------- */
+
+.formulario {
+  background-color: #f6f7f8;
+  border: 1px solid #d6d9dc;
+  border-radius: 3px;
+
+  width: 80%;
+  padding: 50px;
+  margin: 30px 0 40px 0;
+}
+
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+}
+
+.form-row label {
+  margin-bottom: 3px;
+  text-align: initial;
+}
+
+/* ------------- Media Query para pantallas de más de 700px de resolución ------------- */
+@media only screen and (min-width: 700px) {
+  .form-header {
+    padding: 50px;
+  }
+
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .form-row input[type="text"] {
+    width: 250px;
+    height: initial;
+  }
+  .form-row label {
+    text-align: right;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
+}
+
+.form-row textarea {
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+
+
+  background-color: #bdbdbd;
+  border: 0;
+  border-radius: 6px;
+
+
+  min-height: 200px;
+  margin-bottom: 10px;
+  padding: 7px;
+  resize: none;
+
+
+  width: 100%;
+}
+
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+
+
+/*.form-row textarea {
+    width: 250px;
+  }*/
+
+  .form-row button {
+      font-size: 16px;
+      font-weight: bold;
+    
+    
+      color: #ffffff;
+      background-color: #5995da;
+    
+    
+      border: none;
+      border-radius: 3px;
+    
+    
+      padding: 10px 40px;
+      cursor: pointer;
+    }
+    
+    
+    .form-row button:hover {
+      background-color: #76aeed;
+    }
+    
+    
+    .form-row button:active {
+      background-color: #407fc7;
+    }
+    
+    
+    /* ------------- Para Pantallas de más de 700px ------------- */
+    
+    
+    /*.form-row button {
+        margin-left: 120px; 
+    }*/
