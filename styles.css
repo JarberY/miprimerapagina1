@@ -93,6 +93,7 @@ body{
 .redes{
   color: white;
   font-size: 20px;
+  margin-left: 40px;
 }
 
 a i.fa-solid.fa-code.fixed{
